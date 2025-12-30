@@ -1,4 +1,4 @@
-# 🎮 Unreal Tournament 2003 - Linux Installer
+# 🎮 Unreal Tournament 2003 - Linux Installer 🐧
 
 <div align="center">
 
@@ -117,7 +117,7 @@ Se você tem a versão em 3 CDs:
 - Ubuntu/Debian ou derivados (64-bit)
 - Acesso à internet (para baixar o patch)
 - Cópia original do UT2003 (CD/DVD/ISO)
-- Pelo menos 2GB de espaço livre
+- Pelo menos 3GB de espaço livre
 
 #### Instalação
 
@@ -231,6 +231,34 @@ chmod -R 775 ~/Games/ut2003
 chmod -R 775 ~/.ut2003
 ```
 
+### 🗑️ Desinstalação Completa
+Para remover completamente o jogo e todas as configurações:
+```bash
+# Remove o diretório do jogo
+rm -rf ~/Games/ut2003
+
+# Remove configurações do usuário
+rm -rf ~/.ut2003
+
+# Remove atalho do menu
+rm -f ~/.local/share/applications/ut2003.desktop
+
+# Remove ícone do usuário
+rm -f ~/.local/share/icons/ut2003.png
+
+# Remove ícones do sistema (requer sudo)
+sudo rm -f /usr/share/icons/hicolor/*/apps/ut2003.png
+sudo gtk-update-icon-cache /usr/share/icons/hicolor/ 2>/dev/null
+
+# Remove executável global (requer sudo)
+sudo rm -f /usr/local/bin/ut2003
+
+# Atualiza cache do menu
+update-desktop-database ~/.local/share/applications 2>/dev/null
+
+echo "Unreal Tournament 2003 removido completamente!"
+```
+
 ---
 
 ## 🇺🇸 English
@@ -311,7 +339,7 @@ If you have the 3-CD version:
 - Ubuntu/Debian or derivatives (64-bit)
 - Internet access (to download the patch)
 - Original copy of UT2003 (CD/DVD/ISO)
-- At least 2GB of free space
+- At least 3GB of free space
 
 #### Installation
 
@@ -424,9 +452,34 @@ ln -sf /usr/lib/i386-linux-gnu/libopenal.so.1 openal.so
 chmod -R 775 ~/Games/ut2003
 chmod -R 775 ~/.ut2003
 ```
+### 🗑️ Complete Uninstallation
+To completely remove the game and all settings:
+```bash
+# Remove game directory
+rm -rf ~/Games/ut2003
 
+# Remove user settings
+rm -rf ~/.ut2003
+
+# Remove menu shortcut
+rm -f ~/.local/share/applications/ut2003.desktop
+
+# Remove user icon
+rm -f ~/.local/share/icons/ut2003.png
+
+# Remove system icons (requires sudo)
+sudo rm -f /usr/share/icons/hicolor/*/apps/ut2003.png
+sudo gtk-update-icon-cache /usr/share/icons/hicolor/ 2>/dev/null
+
+# Remove global executable (requires sudo)
+sudo rm -f /usr/local/bin/ut2003
+
+# Update menu cache
+update-desktop-database ~/.local/share/applications 2>/dev/null
+
+echo "Unreal Tournament 2003 completely removed!"
+```
 ---
-
 ## 📝 Notas Técnicas / Technical Notes
 
 ### CD Key Padrão / Default CD Key
