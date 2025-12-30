@@ -2,10 +2,16 @@
 
 <div align="center">
 
+![Unreal Tournament 2003](https://img.shields.io/badge/UT2003-Installer-orange?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Linux-blue?style=for-the-badge&logo=linux)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Languages](https://img.shields.io/badge/Languages-PT%20|%20EN-yellow?style=for-the-badge)
+
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Bash](https://img.shields.io/badge/bash-5.0%2B-green.svg)
 ![Platform](https://img.shields.io/badge/platform-Linux-orange.svg)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-compatible-red.svg)
+![Linux Mint](https://img.shields.io/badge/linux%20mint-compatible-green)
 ![Debian](https://img.shields.io/badge/Debian-compatible-pink.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 
